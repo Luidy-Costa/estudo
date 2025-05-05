@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.
+    0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1> adicionando midias em HTML5</h1>
+    <h2>Imagens dinamicas</h2>
+    <p>tente abrir este site em diferentes dispositivos ou mude o tamanho da tela do seu navegador</p>
+
+    <picture>
+        <source media="(max-width:550px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:750px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="foto grande verde claro com um g">
+    </picture>
+
+    <h2>Reproduzindo audio</h2>
+    <p>vamos aprender a como reproduzir um audio</p>
+    <audio preload="metadata" controls loop>
+        <source src="midia/Eu Te Devoro (ao Vivo) - Djavan.mp3" type="audio/mpeg">
+        <p>seu navegador não suporta nosso audio. <a href="midia/Eu Te Devoro (ao Vivo) - Djavan.mp3" download="Eu Te Devoro-Djavan" type="audio/mpeg">Clique aqui para baixar o mp3</a></p>
+    </audio>
+    
+</body>
+</html>

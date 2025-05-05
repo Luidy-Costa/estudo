@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>Bem-vindo ao DOM</h1>
+    <p>Aprendendo sobre <strong>DOM</strong></p>
+    <p>Bora lá, vai ser facil!</p>
+    <div>Clique em mim</div>
+
+   <script>
+    // let p = document.getElementsByTagName("p")
+    let p =  document.querySelectorAll("p")[0]
+    // p.innerText = "valendo"
+
+document.getElementsByTagName("div")[0].innerText = "olá!"
+// document.getElementsByTagName("div")[0].style.background = "lightgreen"
+
+p.innerText =  "oal"
+    
+
+   </script>
+    
+</body>
+</html>

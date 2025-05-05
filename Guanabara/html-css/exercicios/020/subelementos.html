@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            color: darkred;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+
+        }
+         
+        a:visited{
+            color: darkred;
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+
+        a:hover::after{
+            content: "⯌" ;
+        }
+        a:hover::before{
+            content: "⯌" ;
+        }
+
+        a:active{
+            color: palevioletred;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/Luidy-Costa" target="_blank">Repositorio Github</a></li>
+        <li><a href="https://www.youtube.com/@Luigi_verde" target="_blank">Canal Youtube</a></li>
+        <li><a href="https://www.instagram.com/luidy_kosta/" target="_blank">Instagram</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,14 @@
+body{
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: darkred;
+    background-color: aqua;
+}
+h2{
+    color: darkblue;
+}
+p{
+    text-align: justify;
+}
