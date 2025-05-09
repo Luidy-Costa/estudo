@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1746820153 source:c:\users\lluid\desktop\facul\dev\estudo\pietro-martins\c\projetos\proj014\main.c
+	<stdio.h>
+	<stdlib.h>
+	"maior.h"
+
+1746820153 c:\users\lluid\desktop\facul\dev\estudo\pietro-martins\c\projetos\proj014\maior.h
+
+1746820415 source:c:\users\lluid\desktop\facul\dev\estudo\pietro-martins\c\projetos\proj014\maior.c
+	"maior.h"
+
