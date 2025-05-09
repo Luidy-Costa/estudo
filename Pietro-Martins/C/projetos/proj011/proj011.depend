@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1746713550 source:c:\users\lluid\desktop\facul\dev\estudo\pietro-martins\c\projetos\proj011\main.c
+	<stdio.h>
+	<string.h>
+	<locale.h>
+
