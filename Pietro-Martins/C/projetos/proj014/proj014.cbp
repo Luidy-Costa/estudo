@@ -25,6 +25,10 @@
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="maior.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="maior.h" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
