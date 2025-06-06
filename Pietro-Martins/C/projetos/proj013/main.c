@@ -70,42 +70,42 @@ void mudar (){                   //criação da function para alterar os dados
 
     system("cls");
 
-    puts("deseje alterar o nome?\n");  //confirmação de intenção de alteração do nome do cliente
+    puts("\ndeseja alterar o nome? S/N");  //confirmação de intenção de alteração do nome do cliente
     scanf("%c", &fim);
     fflush(stdin);
 
 
     if(fim == 's' || fim == 'S' ){
-    printf("\nQual o novo nome da pessoa %d?", user);  //se confirmada, a alteração do nome
+    printf("Qual o novo nome da pessoa %d?\n", user);  //se confirmada, a alteração do nome
     fgets(p[user-1].nome,TAM,stdin);
     fflush(stdin);
     }else{}
 
 
-    puts("deseje alterar a idade?\n");  //confirmação de intenção de alteração da idade do cliente
+    puts("\ndeseja alterar a idade? S/N");  //confirmação de intenção de alteração da idade do cliente
     scanf("%c", &fim);
     fflush(stdin);
 
 
     if(fim == 's' || fim == 'S' ){
-    printf("\nQual a nova idade da pessoa %d? \n", user); //se confirmada, a alteração da idade
+    printf("Qual a nova idade da pessoa %d? \n", user); //se confirmada, a alteração da idade
     scanf("%d", &p[user-1].idade);
     fflush(stdin);
     }else{}
 
-    puts("deseje alterar a altura?\n");      //confirmação de intenção de alteração da altura do cliente
+    puts("\ndeseja alterar a altura? S/N");      //confirmação de intenção de alteração da altura do cliente
     scanf("%c", &fim);
     fflush(stdin);
 
 
     if(fim == 's' || fim == 'S' ){
-    printf("\nQual a nova altura da pessoa %d? \n", user);  //se confirmada, a alteração da altura
+    printf("Qual a nova altura da pessoa %d? \n", user);  //se confirmada, a alteração da altura
     scanf("%f", &p[user-1].altura);
     fflush(stdin);
     }else{}
 
 
-    puts("\n\nDeseja alterar mais pessoas? \n");  //confirmação se deseja continuar alterado pessoas
+    puts("\n\nDeseja alterar mais pessoas? S/N\n");  //confirmação se deseja continuar alterado pessoas
     scanf("%c", &fim);
     fflush(stdin);
     }}}
