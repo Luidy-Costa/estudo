@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <title>Tabela</title>
+    <style>
+
+        body,html{
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 400px;
+            height: 400px;
+            border-collapse: collapse;
+        }
+
+        tr{
+            padding: 50px;
+        }
+
+        tr.linha{
+            background-color: aqua;
+        }
+        td.dado{
+            background-color: brown ;
+
+        }
+        td{
+            padding: 10px;
+            border: 1px solid black;
+            text-align: center;
+            vertical-align: top;
+
+        }
+        .numero{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Minha Primeira Tabela</h1>
+
+    <!--
+        Hierarquia de tabelas
+        TABLE = TAbela
+            TABLE ROW = Linha da Tabela
+                TABLE HEADER = Cabeçalho da tabela
+                TABLE DATA = Dados da Tabela
+    -->
+
+    <table>
+        <tr class="linha">
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td class="dado">B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td class="numero">B3</td>
+            <td>C3</td>
+        </tr>
+        <tr>
+            <td>A4</td>
+            <td class="numero">B4</td>
+        </tr>
+        <tr>
+            <td>A5</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
