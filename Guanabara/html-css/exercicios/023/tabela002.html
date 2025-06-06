@@ -10,17 +10,36 @@
             height: 100vh;
             font-family: Arial, Helvetica, sans-serif;
         }
-
         table{
             border-collapse: collapse;
             width: 400px;
+            position: relative;
+        }
+        caption{
+            font-size: 1.2rem;
+            font-weight: 600;
+            padding: 5px;
+            background-color: lightgray;
+            /* border: 1px solid black; */
+        }
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color: rgb(66,66,66) ;
+        }
+        tbody > tr:nth-child(even){
+            background-color: lightgray;
+        }
+        tbody > tr:nth-child(even):hover, tbody > tr:hover{
+            background-color:rgb(163, 163, 163) ;
         }
         td, th{
             border: 1px solid black;
             padding: 4px;
         }
         thead,tfoot{
-            background-color: lightgray;
+            background-color: rgb(66, 66, 66);
+            color: white;
         }
         .num{
             text-align: right;
@@ -29,7 +48,7 @@
     </style>
 </head>
 <body>
-    <h1>Alunos por Curso -IFCE</h1>
+    <h1>Tabela Estruturada</h1>
     <!--
         THEAD
             TH,TR,TD
@@ -39,10 +58,11 @@
             TH,TR,TD
     -->
     <table>
+        <caption>Alunos por Curso - IFCE</caption>
         <thead>
             <tr>
-                <th>Curso</th>
-                <th>Alunos por curso</th>
+                <th scope="col">Curso</th>
+                <th scope="col" style="width: 90px;">Alunos por curso</th>
             </tr>
         </thead>
         <tbody>
@@ -58,13 +78,41 @@
                 <td>Zootecnia</td>
                 <td class="num">535</td>
             </tr>
+            <tr>
+                <td>Agropecuaria</td>
+                <td class="num">780</td>
+            </tr>
+            <tr>
+                <td>Redes de Computadores</td>
+                <td class="num">590</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de alunos</th>
-                <td class="num"><strong>911</strong></td>
+                <th scope="row">Total de alunos</th>
+                <td class="num"><strong>2281</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptate dolor, qui possimus quos accusamus. Officia in facere soluta veritatis pariatur consequatur eius provident doloribus cum, eligendi corporis, inventore incidunt.
+    Doloremque pariatur corporis perspiciatis, architecto eos placeat autem quisquam? Nemo dolore sit quidem veritatis recusandae iusto, temporibus dignissimos molestias. Pariatur blanditiis maxime sit similique natus dicta nemo explicabo optio! Explicabo?
+    Itaque eveniet nemo ut maiores corrupti quo deleniti eaque molestias velit. Error facere rerum provident a repellendus adipisci cupiditate fugiat nisi atque beatae, commodi quas obcaecati, voluptate recusandae excepturi doloremque?
+    Quasi veritatis nemo, dolores laborum saepe, quaerat aliquid quibusdam, a maiores voluptatum voluptates excepturi id itaque. Quo vitae maxime rerum ad. Modi et dolor delectus dicta fugit soluta rerum dignissimos!
+    Dolore, culpa maxime! Quas similique soluta suscipit dolorum, quisquam voluptas sit officia minima reiciendis quis at accusamus, consequuntur quaerat inventore enim amet eos nesciunt consequatur atque ipsa. Soluta, natus assumenda!
+    Totam sunt facere optio perferendis iusto error suscipit beatae id aperiam modi, tenetur eius, magni sequi, quam vitae? Optio magnam, molestiae sapiente quis reprehenderit nisi corporis atque officia quibusdam doloribus.
+    Odio similique officiis in nesciunt! Ipsam dolores cum inventore neque nobis illum eaque sunt dolor perspiciatis sequi voluptatem odit nisi laborum quidem atque reprehenderit fugit mollitia officia, quia commodi autem?
+    Explicabo nulla id quasi hic voluptatibus! Dolores repellat quisquam tempora rem assumenda nulla tenetur quam laudantium libero vel laborum ab voluptatem, inventore eius ut esse sapiente, dicta voluptatibus, dolore eveniet!
+    Similique molestiae dolorem impedit nihil cupiditate nulla maxime. Quos impedit animi quisquam nisi reprehenderit temporibus similique illum et, architecto quaerat assumenda recusandae mollitia, cum sit tempora molestias odio optio eos.
+    Maxime dolore magnam blanditiis quidem sed tenetur, est quod adipisci praesentium? Odio ipsam, iste distinctio eius expedita velit sapiente laborum quam. Saepe neque iusto hic eum repudiandae molestias perspiciatis in.
+    Aliquid assumenda aut fugiat. Voluptas iusto ab voluptatem libero molestiae totam quae id odio saepe eaque dolore unde, suscipit sint sapiente. Quisquam quas itaque nostrum ducimus repellat blanditiis quia facere.
+    Molestiae consequuntur quis optio pariatur quod labore sapiente, perspiciatis ipsam! Itaque fugit doloremque nostrum sint similique laboriosam blanditiis aperiam veniam! Saepe necessitatibus praesentium excepturi sed, odio mollitia ipsa! Culpa, labore.
+    Quaerat, placeat ullam quas rerum sunt vitae magnam minus dolor iure? Unde consequuntur incidunt autem, corrupti voluptatum sunt quos quo iusto dolores cumque obcaecati dolorem earum et deserunt tempore repellendus.
+    Commodi, fugiat nobis illo dignissimos amet eum esse provident saepe error tempore deleniti omnis rem, quis quibusdam sed corrupti sunt vero earum molestias iure? Ratione unde nemo dolorem repudiandae sit?
+    Dolor cupiditate deleniti eos ut reiciendis facilis itaque ducimus laborum fugiat ad suscipit natus blanditiis, perferendis nesciunt sapiente nostrum numquam culpa beatae alias voluptatibus neque quo. Impedit provident debitis laboriosam.
+    Velit, cupiditate vitae. Accusamus delectus, dicta itaque magnam cupiditate consequatur quisquam dolore reiciendis ad? Ad dignissimos modi, sint laborum eligendi sapiente aliquid officia provident eum quibusdam aut consequuntur tenetur consequatur.
+    Dolore esse perferendis, ab suscipit quisquam culpa laborum assumenda delectus adipisci ipsa error nemo, facere deleniti at odit. Ducimus omnis voluptate deleniti, enim perferendis accusantium necessitatibus possimus. Repellendus, accusamus architecto.
+    Veritatis, laudantium enim. Ea, officia! A itaque necessitatibus officia dolore nisi. Distinctio sed neque rem, provident pariatur laborum nostrum molestias magnam exercitationem deleniti dolore ipsa atque quibusdam non incidunt. Facilis.
+    Quas non unde ab perferendis exercitationem placeat, voluptates molestiae, perspiciatis accusamus ex quis quae totam dicta a animi quia odio in incidunt dignissimos voluptatum magni. Sequi veritatis maxime blanditiis ea?
+    Saepe distinctio maxime velit expedita nam quia eaque, porro similique! Dolore consequatur esse enim nulla? Tenetur officiis aspernatur esse eaque eveniet quisquam, quas necessitatibus deserunt ipsam omnis, possimus quibusdam ipsa.</p>
 </body>
 </html>
