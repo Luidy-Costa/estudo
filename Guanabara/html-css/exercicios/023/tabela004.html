@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+    <title>Tabela Com Dados</title>
+    <style>
+        html,body{
+            height: 100vh;
+        }
+        table{
+            width: 580px;
+            height: 300px;
+            border-collapse: collapse;
+        }
+        thead{
+            background-color: gray;
+        }
+        th,td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Filmes Favoritos</caption>
+        <thead>
+            <tr>
+                <th>Grupo</th>
+                <th scope="col">Nomes</th>
+                <th  scope="colgroup" colspan="3">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Mulheres</th>
+                <td>Jaqueline</td>
+                <td>Wall-e</td>
+                <td>Rambo 3</td>
+                <td>Oblivion</td>
+            </tr>
+            <tr>
+                <td>Camila</td>
+                <td>V de vingança</td>
+                <td>Batman</td>
+                <td>Lilo&Stich</td>
+            </tr>
+            <tr>
+                <td>Carla</td>
+                <td>Star Wars 3</td>
+                <td>Toy Story</td>
+                <td> Rambo 2</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Homens</th>
+                <td>Jose</td>
+                <td>Como Eu Era Antes de Você</td>
+                <td>Old boy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Hermano</td>
+                <td>Missão Impossivel</td>
+                <td>Big Hero</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <td>carlos</td>
+                <td>As Vantagens de Invisivel</td>
+                <td>Limitless</td>
+                <td>Matrix</td>
+            </tr>
+
+        </tbody>
+    </table>
+    
+</body>
+</html>
