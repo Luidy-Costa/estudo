@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <title>Scope ...group</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+
+        thead th,tfoot th{
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+
+        td,th{
+            border: 1px solid black;
+            text-align: center;
+            padding: 4px;
+        }
+        .cinza{
+            background-color: gray;
+
+        }
+
+        .azul{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <table>
+        <colgroup>
+            <col class="cinza">
+            <col class="azul" span="2">
+            <col>
+        </colgroup>
+        <caption>Cadastro</caption>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jorge</td>
+                <td>M</td>
+                <td>29</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Claudia</td>
+                <td>F</td>
+                <td>48</td>
+                <td>Programadora</td>
+            </tr>
+            <tr>
+                <td>Francisca</td>
+                <td>F</td>
+                <td>58</td>
+                <td>Professora</td>
+            </tr>
+            <tr>
+                <td>Cladisney</td>
+                <td>M</td>
+                <td>22</td>
+                <td>Caixa</td>
+            </tr>
+            <tr>
+                <td>Leonardo</td>
+                <td>M</td>
+                <td>49</td>
+                <td>Sociologo</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>F</td>
+                <td>31</td>
+                <td>Manicure</td>
+            </tr>
+            <tr>
+                <td>Gabriela</td>
+                <td>F</td>
+                <td>24</td>
+                <td>Borrachera</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
