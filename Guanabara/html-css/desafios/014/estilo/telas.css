@@ -1,0 +1,25 @@
+@charset "UTF-8";
+*{
+    margin: 0rem;
+    padding: 0rem;
+}
+
+html,body{
+    height: 100vh;
+    width: 100vw;
+}
+
+main img{
+    width: 100vw;
+}
+main a{
+    display: block;
+    background-color: lightgreen;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: -4px;
+}
