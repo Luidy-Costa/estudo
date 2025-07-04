@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon">
+    <style>
+        html{
+            font-family: arial, Helvetica, sans-serif;
+        }
+    </style>
+    <title>Segundo Formulário</title>
+</head>
+<body>
+    <h1>Testando o Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p>
+            <label for="idusuario">Usuario:</label>
+            <input type="text" name="usuario" id="idusuario" required minlength="4" maxlength="20" autocomplete="username" placeholder="Nome do usuario" size="15">
+        </p>
+        <p>
+            <label for="idsenha">Senha:</label>
+            <input type="password" name="senha" id="idsenha" required minlength="8" max="20" size="15" placeholder="Minimo de 8 digitos" autocomplete="current-password">
+        </p>
+
+        <p><input type="submit" value="Enviar"> <input type="reset" value="Reset"></p>
+
+    </form>
+</body>
+</html>
