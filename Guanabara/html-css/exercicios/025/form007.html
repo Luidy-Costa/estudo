@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Setimo Formulário</title>
+</head>
+
+<body>
+    <h1>Exemplo de tabela</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="idestado">Estado:</label>
+            <select name="estado" id="idestado">
+                <option value="" selected>----Escolha uma----</option>
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+
+            <label for="idprof">Profissão:</label>
+            <input type="text" name="profissao" id="idprof" list="listprof">
+            <datalist id="listprof">
+                <option value="PROF">Professor</option>
+                <option value="ADM">Administrador</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="CONT">Contador</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="idtexto">Mensagem</label>
+            <textarea name="texto" id="idtexto" cols="30" rows="3"></textarea>  
+        </p>
+
+        <p><input type="submit" value="Enviar"> <input type="reset" value="Limpar"></p>
+    </form>
+
+</body>
+
+</html>
