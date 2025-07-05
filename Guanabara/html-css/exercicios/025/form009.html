@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Setimo Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de tabela</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="idnivelsas">Nivel de Satisfação</label>
+            <input type="range" name="nivelsas" id="idnivelsas" value="5" oninput="saida.innerHTML = Number(idnivelsas.value)" min="1" max="5">
+            <output id="saida">5</output>
+        </p>
+        <p><input type="submit" value="Enviar"> <input type="reset" value="Limpar"></p>
+    </form>
+    
+</body>
+</html>

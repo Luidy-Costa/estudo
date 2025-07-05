@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Setimo Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de tabela</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="idanoatual">Ano atual</label>
+            <input type="number" name="anoatual" id="idanoatual" required placeholder="Digite o ano atual"
+            oninput="ididade.innerHTML = calcidade((idanoatual.value),(idanonasc.value))">
+        </p>
+        <p>
+            <label for="idanonasc">Ano de nascimento</label>
+            <input type="number" name="anonasc" id="idanonasc" required placeholder="digite o ano que nasceu" size="19" oninput="ididade.innerHTML = calcidade((idanoatual.value),(idanonasc.value))">
+        </p>
+        <p>
+            <label for="ididade">Idade</label>
+            <output id="ididade">0</output>
+        </p>
+        <p><input type="submit" value="Enviar"> <input type="reset" value="Limpar"></p>
+    </form>
+    <script>
+        function calcidade(n1,n2){
+            let idade = n1 - n2
+            return idade
+        }
+    </script>
+    
+</body>
+</html>

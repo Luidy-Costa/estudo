@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Oitavo Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de tabela</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="idn1">1º número</label>
+            <input type="number" name="n1" id="idn1" placeholder="Digite um número" required oninput="idsoma.innerHTML = Number(idn1.value) + Number(idn2.value)">
+        </p>
+        <p>
+            <label for="idn2">2º número</label>
+            <input type="number" name="n2" id="idn2" placeholder="Digite um número" required
+            oninput="idsoma.innerHTML = Number(idn1.value) + Number(idn2.value)">
+        </p>
+        <p>
+            <label for="idsoma">Resultado:</label>
+            <output name="soma" id="idsoma">0</output>
+        </p>
+        
+
+        <p><input type="submit" value="Enviar"> <input type="reset" value="Limpar"></p>
+    </form>
+    
+</body>
+</html>
