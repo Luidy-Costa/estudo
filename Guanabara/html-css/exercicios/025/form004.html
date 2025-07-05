@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon">
+    <style>
+        html{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <title>Quarto formulario</title>
+</head>
+<body>
+    <h1>Emails e Telefones</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="idnome">Nome:</label>
+                <input type="text" name="nome" id="idnome" required minlength="3" maxlength="30" placeholder="Nome do cliente" autocomplete="name" size="15">
+            </p>
+            <p>
+                <label for="idemail">Email:</label>
+                <input type="email" name="email" id="idemail" required autocomplete="email" placeholder="@gmail.com">
+            </p>
+            <p>
+                <label for="idtele">Telefone:</label>
+                <input type="tel" name="tele" id="idtele" required placeholder="(xx) xxxx-xxxx" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" >
+            </p>
+        </fieldset>
+
+        <p><input type="submit" value="Enviar"><input type="reset" value="Limpar"></p>
+    </form>
+    
+</body>
+</html>
