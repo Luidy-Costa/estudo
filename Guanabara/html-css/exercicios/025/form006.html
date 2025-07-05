@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon">
+    <style>
+        html{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <title>Sexto Formulario</title>
+</head>
+<body>
+    <h1>Formularios com color, range e file</h1>
+    <form action="cadastro.php">
+        <p>
+            <label for="idcor">Cor:</label>
+            <input type="color" name="cor" id="idcor" value="#0000ff">
+        </p>
+
+        <p>
+            <label for="idnivel">Nivel de Satisfação</label>
+            <input type="range" name="nivel" id="idnivel" min="1" max="5" value="2">
+        </p>
+
+        <p>
+            <label for="idfoto">Envia sua foto de perfil</label>
+            <input type="file" name="foto" id="idfoto" >
+        </p>
+        <p><input type="submit" value="Enviar"> <input type="reset" value="Limpar"></p>
+    </form>
+    
+</body>
+</html>
