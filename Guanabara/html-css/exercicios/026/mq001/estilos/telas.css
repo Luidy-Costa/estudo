@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/*Estilo para telas*/
+
+*{
+    margin: 0rem;
+    padding: 0rem;
+}
+html,body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: lightgray;
+    margin-bottom: 2rem;
+}
+
+header h1{
+    text-align: center;
+}
+
+header li{
+    display: inline-block;
+    padding: 10px;
+    margin: 0px 4px;
+    background: gray;
+    color: white;
+}
+
+main h2{
+    margin:10px;
+    background: linear-gradient(to right,lightgreen, white);
+
+}
+
+main p{
+    margin: 20px 30px;
+    text-indent: 15px;
+}
